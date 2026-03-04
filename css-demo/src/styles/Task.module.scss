@@ -1,0 +1,50 @@
+@use "./variables" as *;
+@use "sass:color";
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: $radius;
+  background: $task-bg;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background 0.2s;
+
+  &:hover {
+    transform: translateX(0);
+    background: color.scale($primary, $lightness: 80%);
+  }
+
+  &.done {
+    opacity: 0.6;
+    text-decoration: line-through;
+  }
+
+  .actions {
+    display: flex;
+    gap: 8px;
+
+    button {
+      padding: 4px 8px;
+      border-radius: $radius;
+      border: none;
+      cursor: pointer;
+      background: $primary;
+      color: white;
+
+      &:hover {
+        background: color.scale($primary, $lightness: -10%);
+      }
+    }
+  }
+
+  .input {
+    flex-grow: 1;
+    padding: 6px;
+    border-radius: $radius;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+}
