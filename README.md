@@ -5,21 +5,26 @@ A simple React-based task tracker allowing you to add, edit, toggle, and delete 
 
 ## Setup & Run Instructions
 1. Clone the repository
-
-   ```git clone https://github.com/marusagav/jetbrains_internship.git```   
-   ```cd css-demo```
+   ``` bash
+   git clone https://github.com/marusagav/jetbrains_internship.git 
+   cd css-demo
+   ```
 3. Install dependencies
-
-   ```npm install```
+   ``` bash
+   npm install
+   ```
 5. Run the development server
-
-   ```npm run dev```
+   ``` bash
+   npm run dev
+   ```
 7. Build for production
-
-   ```npm run build```
+   ``` bash
+   npm run build
+   ```
 9. Preview production build
-
-    ```npm run preview```
+    ``` bash
+   npm run preview
+    ```
 
 ## How SCSS is transformed into CSS
 The project uses Vite + Sass. All authored SCSS files (.scss) are compiled into standard CSS by the Sass preprocessor.
