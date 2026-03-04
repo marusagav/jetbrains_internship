@@ -6,7 +6,8 @@ A simple React-based task tracker allowing you to add, edit, toggle, and delete 
 ## Setup & Run Instructions
 1. Clone the repository
 
-   ```git clone```
+   ```git clone https://github.com/marusagav/jetbrains_internship.git```   
+   ```cd css-demo```
 3. Install dependencies
 
    ```npm install```
